@@ -1,3 +1,44 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/assets/fonts/Gilroy-Regular.ttf.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/assets/fonts/Gilroy-Bold.ttf.ttf') format('woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/assets/fonts/Gilroy-Light.ttf.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/assets/fonts/Gilroy-Medium.ttf.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/assets/fonts/Gilroy-Semibold.ttf.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/assets/fonts/Gilroy-Extrabold.ttf.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +46,7 @@
 }
 
 body{
-    font-family: "Gilroy-Regular";
+    font-family: 'Gilroy', sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -29,7 +70,7 @@ ul, ol {
 }
 
 .header-wrapper {
-    padding: 15px;
+    padding: 15px 15px 10px;
     position: fixed;
     top: 0;
     background: #fff;
@@ -51,7 +92,7 @@ ul, ol {
     align-items: center;
     justify-content: space-between;
     /* grid-gap: 13.5vw; */
-    grid-gap: 8rem;
+    /* grid-gap: 8rem; */
 }
 
 .nav-logo {
@@ -77,16 +118,18 @@ ul, ol {
 
 sup {
     position: absolute;
-    top: 7px;
+    top: 4px;
     right: 0;
     color: #ffa700;
     left: 75px;
     font-size: 10px;
     font-weight: 600;
+    display: inline-block;
+    width: fit-content;
 }
 
 .nav-icons ul li:nth-child(3) {
-    padding-right: 15px;
+    padding-right: 5px;
 }
 
 svg{
@@ -98,16 +141,19 @@ svg{
 }
 
 .other {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 14px;
     color: rgba(2,6,12,.9);
     position: relative;
-    padding-block: 5px;
+    padding-block: 4px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    grid-gap: 10px;
+    grid-gap: 14px;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .other:hover {
@@ -123,7 +169,7 @@ svg{
     position: absolute;
     background-color: rgba(2,6,12,.9);
     height: 1px;
-    width: 60%;
+    width: 55%;
     bottom: 0px;
     max-width: 100%;
     left: 0;
@@ -141,6 +187,7 @@ span.card-count {
     align-items: center;
     justify-content: flex-end;
     grid-gap: 2.7vw;
+    margin-bottom: 5px;
 }
 
 .nav-icons ul li a {
@@ -152,7 +199,7 @@ span.card-count {
     justify-content: center;
     grid-gap: 10px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     padding-block: 10px;
     position: relative;
 }
@@ -186,12 +233,14 @@ span.card-count {
 }
 
 .slider-row {
-    padding: 20px;
+    padding-inline: 15px;
 }
 
 .slider-head-text h2 {
-    font-size: 21px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.6px;
+    line-height: 1.1px;
 }
 
 .slider-head {
@@ -199,6 +248,7 @@ span.card-count {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding-top: 12px;
 }
 
 .slider-head-arrow {
@@ -207,7 +257,6 @@ span.card-count {
     align-items: center;
     justify-content: center;
     grid-gap: 15px;
-    margin-right: 15px;
 }
 
 .swiper-slide-button {
@@ -219,9 +268,10 @@ span.card-count {
 
 /* slider-images */
 
-.slider-imgs{
+.slider-imgs {
     overflow: hidden;
     width: 100%;
+    padding-top: 12px;
 }
 
 .slider-imgs ul {
@@ -229,9 +279,9 @@ span.card-count {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-start;
-    padding-bottom: 50px;
     position: relative;
     grid-gap: 1.5vw;
+    padding-bottom: 15px;
 }
 
 .slider-imgs ul li{
@@ -243,14 +293,14 @@ span.card-count {
     width: 144px;
 }
 
-.slider-imgs ul::after {
+/* .slider-imgs ul::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 3px;
-    background-color: #d6d7d6;
+    background-color: rgba(2, 6, 12, 0.1);
     bottom: 0;
-}
+} */
 
 /* Top restaurants chains in Indore */
 
@@ -283,23 +333,32 @@ section.main-slider-wrapper {
 
 .absolute-text-bottom {
     padding: 10px;
+    display: grid;
+    gap: 3px;
+    margin-top: 2px;
+    align-items: center;
+    font-family: 'Gilroy';
 }
 
 .absolute-text-bottom h6 {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 22px;
     color: rgba(2, 6, 12, 0.92);
+    letter-spacing: -1.1px;
 }
 
 .grey-text {
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 600;
     line-height: 21px;
     color: rgba(2, 6, 12, 0.6);
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    letter-spacing: -0.4px;
+    font-family: 'Gilroy';
+    /* text-shadow: 0.50px 0.05px rgba(2, 6, 12, 0.3); */
 }
 
 .absolute-text {
@@ -309,18 +368,21 @@ section.main-slider-wrapper {
     padding: 10px;
     width: 100%;
     color: #fff;
-    font-weight: 700;
     border-radius: 0px 0px 15px 15px;
     background: linear-gradient(to top, rgba(0, 0, 0), rgba(0, 0, 0, 0));
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 900;
     letter-spacing: -0.5px;
+    height: calc(81px);
+    display: grid;
+    align-content: end;
+    font-family: 'Gilroy';
 }
 
 .text-slider-imgs {
     overflow: hidden;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .text-slider-imgs ul {
@@ -330,17 +392,17 @@ section.main-slider-wrapper {
     justify-content: flex-start;
     gap: 30px;
     position: relative;
-    padding-bottom: 55px;
+    padding-bottom: 25px;
 }
 
-.text-slider-imgs ul::after {
+/* .text-slider-imgs ul::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 3px;
     background-color: #d6d7d6;
     bottom: 0;
-}
+} */
 
 .text-slider-imgs ul li {
     flex-shrink: 0;
@@ -357,7 +419,9 @@ section.main-slider-wrapper {
 .rating-d-flex span {
     color: rgba(2, 6, 12, 0.92);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 550;
+    line-height: 1.2;
+    letter-spacing: -1.1px;
 }
 
 /* Restaurants with online food delivery in Indore */
@@ -367,14 +431,20 @@ section.main-slider-wrapper {
     padding: 10px;
     max-width: 6rem;
     border: 1px solid rgba(2, 6, 12, 0.15);
-    margin-block: 15px;
+    margin-block: 20px;
     cursor: pointer;
     appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(2,6,12,0.75)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");    background-size: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(2,6,12,0.75)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-size: 20px;
     background-repeat: no-repeat;
     background-position: right 10px center;
     width: 100%;
     background-color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.35px;
+    color: rgba(2, 6, 12, 0.75);
 }
 
 .content-head {
@@ -432,9 +502,8 @@ section.main-slider-wrapper {
 /* places */
 
 .place-row {
-    max-width: 970px;
-    margin: auto;
-    padding: 10px;
+    display: grid;
+    gap: 25px;
 }
 
 .cities ul{
@@ -447,7 +516,8 @@ section.main-slider-wrapper {
 
 .cities ul li a {
     border: 1.5px solid rgba(2, 6, 12, 0.1);
-    padding: 10px;
+    padding-block: 10px;
+    padding-inline: 18px;
     border-radius: 12px;
     margin: 0 8px 16px;
     display: block;
@@ -455,10 +525,11 @@ section.main-slider-wrapper {
 
 .cities ul li a span{
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 21px;
     text-align: center;
     color: rgba(2, 6, 12, 0.75);
+    letter-spacing: -0.4px;
 }
 
 .show-display {
@@ -492,34 +563,33 @@ section.main-slider-wrapper {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    grid-gap: 10px;
-}
-
-.footer-head-content {
-    padding: 40px 0 80px 0;
+    grid-gap: 25px;
+    padding: 33px 0 85px 0;
     position: relative;
 }
 
-.footer-head-content::before {
+/* .footer-head-content::before {
     content: "";
     position: absolute;
     width: 100%;
     background-color: #000;
     height: 1px;
     top: 0;
-}
+} */
+
 .footer-head-content h4 {
     font-size: 24px;
     font-weight: 800;
     line-height: 26px;
     color: rgba(2, 6, 12, 0.75);
+    letter-spacing: -0.6px;
 }
 
 .footer-head-content img {
-    width: 200px;
-    height: 70px;
+    max-width: 208px;
+    height: 64px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .footer-main {
@@ -540,7 +610,7 @@ section.main-slider-wrapper {
 
 .footer-main ul li a {
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 500;
     line-height: 21px;
     letter-spacing: -0.4px;
     color: rgba(2, 6, 12, 0.6);
@@ -548,7 +618,7 @@ section.main-slider-wrapper {
 
 .ul-head {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 22px;
     color: rgba(2, 6, 12, 0.92);
     letter-spacing: -0.45px;
@@ -574,8 +644,38 @@ section.main-slider-wrapper {
 }
 
 .city-container {
-    margin-left: calc(15% - 6px);
-    margin-right: calc(15% - 6px);
+    margin-left: calc(15% - 16px);
+    margin-right: calc(15% - 16px);
     padding-inline: 10px;
 }
 
+.hr-tag {
+    border: 1px solid rgba(2, 6, 12, 0.1);
+    margin: 32px calc(7% + 52px);
+}
+
+.place-wrapper {
+    padding-bottom: 35px;
+}
+
+.left-arrow{
+    background-color: rgb(236 236 237);
+}
+
+.left-arrow svg {
+    opacity: 0.5;
+}
+
+.nav-logo-dropdown a span {
+    letter-spacing: -0.1px;
+}
+
+.text-slider-content-imgs {
+    padding-top: 8px;
+}
+
+.hr-tag-footer {
+    max-width: 1080px;
+    margin: auto;
+    background-color: rgba(2, 6, 12, 0.75);
+}
