@@ -1,40 +1,40 @@
 @font-face {
   font-family: 'Gilroy';
-  src: url('/assets/fonts/Gilroy-Regular.ttf.ttf') format('woff2');
+  src: url('/assets/fonts/Gilroy-Regular.ttf') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('/assets/fonts/Gilroy-Bold.ttf.ttf') format('woff2');
+  src: url('/assets/fonts/Gilroy-Bold.ttf') format('woff2');
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('/assets/fonts/Gilroy-Light.ttf.ttf') format('truetype');
+  src: url('/assets/fonts/Gilroy-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('/assets/fonts/Gilroy-Medium.ttf.ttf') format('truetype');
+  src: url('/assets/fonts/Gilroy-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('/assets/fonts/Gilroy-Semibold.ttf.ttf') format('truetype');
+  src: url('/assets/fonts/Gilroy-Semibold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('/assets/fonts/Gilroy-Extrabold.ttf.ttf') format('truetype');
+  src: url('/assets/fonts/Gilroy-Extrabold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
@@ -243,7 +243,7 @@ span.card-count {
 .slider-head-text h2 {
     font-size: 21px;
     font-weight: 800;
-    letter-spacing: -0.05px;
+    letter-spacing: -0.04px;
     line-height: 1.1px;
 }
 
@@ -459,7 +459,7 @@ section.main-slider-wrapper {
 }
 
 .content-row{
-    padding: 10px;
+    padding-block: 10px;
 }
 
 /* Row1 */
