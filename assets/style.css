@@ -83,7 +83,7 @@ ul, ol {
 .header-container {
     max-width: 1220px;
     margin: auto;
-    padding-inline: 10px;
+    padding-inline: 10px;   
 }
 
 .nav {
@@ -93,6 +93,10 @@ ul, ol {
     justify-content: space-between;
     /* grid-gap: 13.5vw; */
     /* grid-gap: 8rem; */
+}
+
+.nav-icons {
+    margin-right: -16px;
 }
 
 .nav-logo {
@@ -118,12 +122,12 @@ ul, ol {
 
 sup {
     position: absolute;
-    top: 4px;
+    top: 6px;
     right: 0;
     color: #ffa700;
-    left: 75px;
+    left: 76px;
     font-size: 10px;
-    font-weight: 600;
+    font-weight: 800;
     display: inline-block;
     width: fit-content;
 }
@@ -168,8 +172,8 @@ svg{
     content: "";
     position: absolute;
     background-color: rgba(2,6,12,.9);
-    height: 1px;
-    width: 55%;
+    height: 2px;
+    width: 53%;
     bottom: 0px;
     max-width: 100%;
     left: 0;
@@ -177,7 +181,7 @@ svg{
 
 span.card-count {
     position: absolute;
-    left: 5px;
+    left: 6px;
     font-size: 14px;
 }
 
@@ -186,7 +190,7 @@ span.card-count {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
-    grid-gap: 2.7vw;
+    grid-gap: 3.5vw;
     margin-bottom: 5px;
 }
 
@@ -237,9 +241,9 @@ span.card-count {
 }
 
 .slider-head-text h2 {
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 800;
-    letter-spacing: -0.6px;
+    letter-spacing: -0.05px;
     line-height: 1.1px;
 }
 
@@ -271,7 +275,7 @@ span.card-count {
 .slider-imgs {
     overflow: hidden;
     width: 100%;
-    padding-top: 12px;
+    padding-top: 14px;
 }
 
 .slider-imgs ul {
@@ -280,7 +284,7 @@ span.card-count {
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    grid-gap: 1.5vw;
+    grid-gap: 1.37em;
     padding-bottom: 15px;
 }
 
@@ -334,7 +338,7 @@ section.main-slider-wrapper {
 .absolute-text-bottom {
     padding: 10px;
     display: grid;
-    gap: 3px;
+    /* gap: 3px; */
     margin-top: 2px;
     align-items: center;
     font-family: 'Gilroy';
@@ -413,7 +417,7 @@ section.main-slider-wrapper {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
-    grid-gap: 5px;
+    grid-gap: 2px;
 }
 
 .rating-d-flex span {
@@ -434,8 +438,8 @@ section.main-slider-wrapper {
     margin-block: 20px;
     cursor: pointer;
     appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(2,6,12,0.75)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
-    background-size: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='rgba(2,6,12,0.75)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-size: 16px;
     background-repeat: no-repeat;
     background-position: right 10px center;
     width: 100%;
@@ -530,6 +534,7 @@ section.main-slider-wrapper {
     text-align: center;
     color: rgba(2, 6, 12, 0.75);
     letter-spacing: -0.4px;
+    display: inline-block;
 }
 
 .show-display {
@@ -551,13 +556,8 @@ section.main-slider-wrapper {
 
 .footer-wrapper{
     background-color: rgb(240, 240, 245);
-    padding-bottom: 40px;
 }
 
-.footer-container{
-    max-width: 1100px;
-    margin: auto;
-}
 .footer-head-content {
     display: flex;
     flex-wrap: wrap;
@@ -593,19 +593,22 @@ section.main-slider-wrapper {
 }
 
 .footer-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-.d-grid {
     display: grid;
-    grid-gap: 10px;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 14%;
+    padding: 0px 15% 1.5rem;
 }
 
-.footer-main ul li{
-    padding-block: 8px;
+.footer-main ul li {
+    padding: 8px 40px 8px 0;
+}
+
+.padding-right-15 li{
+    padding-right: 15px !important;
+}
+
+.padding-right-8 li{
+    padding-right: 8px !important;
 }
 
 .footer-main ul li a {
@@ -626,7 +629,7 @@ section.main-slider-wrapper {
 
 .nested-list {
     display: grid;
-    grid-gap: 10vw;
+    grid-gap: 14vw;
 }
 
 .socia-icons li a img {
@@ -639,8 +642,9 @@ section.main-slider-wrapper {
 .socia-icons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 8px;
 }
 
 .city-container {
@@ -678,4 +682,30 @@ section.main-slider-wrapper {
     max-width: 1080px;
     margin: auto;
     background-color: rgba(2, 6, 12, 0.75);
+}
+
+.footer-uls {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.nav-logo-img span {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 500;
+    color: rgba(2, 6, 12, 0.6);
+    letter-spacing: -0.5px;
+    font-size: 16px;
+}
+
+/* .width-85{
+    width: 85% !important;
+}
+
+.width-115{
+    width: 115% !important;
+} */
+
+.margin-4030{
+    margin: 4px 0 3px 0;
 }
